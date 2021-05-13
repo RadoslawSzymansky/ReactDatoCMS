@@ -1,9 +1,9 @@
 import { createGlobalStyle } from 'styled-components/macro'
 
-const GlobalStyle = createGlobalStyle`
+const Typography = createGlobalStyle`
   body {
     color: 'white';
   }
 `;
 
-export default GlobalStyle;
+export default Typography;
