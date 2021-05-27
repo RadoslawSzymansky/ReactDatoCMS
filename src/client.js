@@ -1,4 +1,4 @@
-import { GraphQLClient } from "graphql-hooks";
+import { GraphQLClient } from "graphql-request";
 
 const apiToken = process.env.REACT_APP_DATO_API_TOKEN;
 const endpoint = `https://graphql.datocms.com`;
