@@ -15,7 +15,7 @@ const MenuComponent = () => {
 
     useEffect(() => {
         dispatch(fectchMenuAsync());
-    }, [])
+    }, [dispatch])
 
     return (
         <Menu>
