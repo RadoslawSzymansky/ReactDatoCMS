@@ -1,8 +1,6 @@
 import styled from 'styled-components';
-import { breakpoints } from '../../src/app/theme/variables';
+import { media } from '../../src/app/theme/variables';
 
-const { small, medium, large, extraLarge } = breakpoints;
- 
 export default styled.div`
     width: 100%;
     padding-right: 15px;
@@ -10,19 +8,19 @@ export default styled.div`
     margin-right: auto;
     margin-left: auto;
 
-    @media (min-width: ${small}) {
-        max-width: 540px;
-    }
+    ${media['sm'](`
+        max-width: 500px
+    `)}
 
-    @media (min-width: ${medium}) {
-        max-width: 720px;
-    }
+    ${media['md'](`
+        max-width: 750px
+    `)}
 
-    @media (min-width: ${large}) {
-        max-width: 960px;
-    }
+    ${media['lg'](`
+        max-width: 960px
+    `)}
 
-    @media (min-width: ${extraLarge}) {
-        max-width: 1240px;
-    }
+    ${media['xl'](`
+        max-width: 1100px
+    `)}
 `;

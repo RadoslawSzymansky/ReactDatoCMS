@@ -19,11 +19,13 @@ const MenuComponent = () => {
 
     return (
         <Menu>
-
             {
-                menuStatus === 'loading' ? 'Ładowanie menu..' : menuList.map( e => <NavLink key={e.id} to={e.endpoint}>
-                    {e.title}
-                </NavLink>)
+                menuStatus === 'loading' ? 'Ładowanie menu..' : menuList.map( e => <li>
+                    <NavLink key={e.id} to={e.endpoint}>
+                        {e.title}
+                    </NavLink>
+                </li>
+                )
             }
         </Menu>
     )
